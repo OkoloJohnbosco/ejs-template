@@ -6,6 +6,7 @@ const port = 3000;
 
 // Static files
 app.use(expressLayouts)
+app.set("layout", "./layouts/full-width")
 app.use(express.static("public"));
 app.use("/css", express.static(__dirname + "public/css"));
 app.use("/js", express.static(__dirname + "public/js"));
@@ -26,6 +27,8 @@ app.get("", (req, res) => {
       { name: "Eze", gender: "m" },
       { name: "Enyinna", gender: "m" },
       { name: "Augusta", gender: "f" },
+      { name: "Niyi", gender: "m" },
+      { name: "Rejoice", gender: "f" },
     ],
   });
 });
