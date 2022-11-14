@@ -11,14 +11,21 @@
 </head>
 
 <body>
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/about">Profile</a>
+
+  </div>
   <section>
     <main class="home__header">
       <h1>My first Ejs Site</h1>
-      <a href="/about">Header</a>
     </main>
     <div class="home__divider"></div>
     <%- body %>
-    <%- include("../partials/menu.ejs") %>
+    <div class="home_profile__wrapper">
+      <%- include("../partials/menu.ejs") %>
+    </div>
     <div class="home__footer">
       <p>Phreetech | 2022</p>
     </div>

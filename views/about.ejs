@@ -10,13 +10,7 @@
 </head>
 
 <body>
-  <div class="home__profile__img">
-    <h3>About Page</h3>
-    <!-- <img src="img/girl.webp" height="100" width="20px" alt=""> -->
-    <p>
-      This user queried
-      <%= data.userQuery  %>
-    </p>
+  <div class="about_header">
     <ul>
       <% data.results.forEach(result => { %>
       <h1><%= result  %></h1>

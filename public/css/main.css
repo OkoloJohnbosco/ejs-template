@@ -15,6 +15,23 @@ body, html {
     display: grid;
     grid-template-columns: 300px 1fr;
     column-gap: 30px;
+    
+}
+.full-h {
+    height: 70vh !important;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 auto;
+}
+.navbar a {
+    text-decoration: none;
+    color: #737373;
 }
 .home__footer {
     width: 100%;
@@ -51,7 +68,7 @@ body, html {
 }
 .home_profile__wrapper__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
     /* minmax(250px, 1fr) */
     column-gap: 20px;
     row-gap: 20px;
@@ -84,4 +101,24 @@ body, html {
 .home__profile__img img {
     max-width: 100%;
     width: 100%;
+}
+
+/* About page */
+.about_header {
+    width: 100%;
+    background-color: #737373;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 1f;
+    row-gap: 10px;
+}
+
+@media (max-width: 500px) {
+    .sidebar_wrapper {
+        grid-template-columns: 1fr;
+    }
+
 }
