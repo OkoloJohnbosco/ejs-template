@@ -26,3 +26,25 @@ body, html {
     width: 100%;
     margin: 40px auto;
 }
+
+.home_profile__wrapper {
+    max-width: 1300px;
+    margin: 10px auto 0;
+    width: 92%;
+}
+.home__profile {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.home__profile__img {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.home__profile__img img {
+    max-width: 100%;
+    width: 100%;
+}

@@ -16,6 +16,20 @@
       <h1>My first Ejs site</h1>
     </main>
     <div class="home__divider"></div>
+
+    <div class="home_profile__wrapper">
+      <ul>
+        <% profiles.forEach(result => { %>
+        <h1><%= result.name  %></h1>
+        <% }); %>
+      </ul>
+    </div>
+    <div class="home__profile">
+      <div class="home__profile__img">
+        <img src="img/girl.webp" alt="">
+      </div>
+      <p>Omo</p>
+    </div>
     <h1>Hello world</h1>
     <h2>
       <%= text  %>
