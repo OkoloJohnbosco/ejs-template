@@ -1,9 +1,11 @@
 const express = require("express");
-const app = express();
+const expressLayouts = require("express-ejs-layouts")
 
+const app = express();
 const port = 3000;
 
 // Static files
+app.use(expressLayouts)
 app.use(express.static("public"));
 app.use("/css", express.static(__dirname + "public/css"));
 app.use("/js", express.static(__dirname + "public/js"));
