@@ -22,6 +22,8 @@ app.get("", (req, res) => {
       { name: "Johnboscc", gender: "m" },
       { name: "Goodness", gender: "f" },
       { name: "Eze", gender: "m" },
+      { name: "Enyinna", gender: "m" },
+      { name: "Augusta", gender: "f" },
     ],
   });
 });
