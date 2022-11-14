@@ -11,18 +11,17 @@
 </head>
 
 <body>
-  <section>
+  <section class="sidebar_wrapper">
     <main class="home__header">
-      <h1>My first Ejs Site</h1>
-      <a href="/about">Header</a>
+      <h1>Sidebar Layout</h1>
     </main>
-    <div class="home__divider"></div>
     <%- body %>
-    <%- include("../partials/menu.ejs") %>
-    <div class="home__footer">
-      <p>Phreetech | 2022</p>
-    </div>
+    <!-- <%- include("../partials/menu.ejs") %> -->
+
   </section>
+  <div class="home__footer">
+    <p>Phreetech | 2022</p>
+  </div>
 </body>
 
 </html>

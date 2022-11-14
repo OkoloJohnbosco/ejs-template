@@ -38,6 +38,7 @@ app.get("/about", (req, res) => {
   // res.send("/views/index.html")
   console.log(req.params);
   res.render("about", {
+    layout: "./layouts/sidebar",
     text: "this is ejs",
     data: { userQuery: req.params.userQuery, results: ["Johnbosc", "kdkdk"] },
   });
